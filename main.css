@@ -14,19 +14,25 @@ main {
 }
 
 .main-cntr {
-  max-width: 50%;
+  max-width: 80%;
   background: rgba(255, 255, 255, 0.2);
-  padding: 30px;
+  padding: 20px;
   text-align: center;
 }
 
 .main-cntr > header {
-  font-size: 30px;
-  padding-bottom: 16px;
+  font-size: 32px;
+  padding: 16px 0px;
+}
+
+.main-cntr > section {
+  font-size: 24px;
+  padding: 24px 0px;
 }
 
 .main-cntr > footer {
-  font-size: 22px;
+  font-size: 20px;
+  padding: 16px 0px;
 }
 
 .main-cntr > footer > a {
