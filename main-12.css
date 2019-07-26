@@ -1,7 +1,7 @@
 body {
   font-family: 'PT Sans', sans-serif;
-  background-color: #1f3050;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #1f3050;
 }
 
 main {
@@ -15,9 +15,11 @@ main {
 
 .main-cntr {
   max-width: 80%;
-  background: #314b81;
+  background: #ffffff;
   padding: 20px;
   text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
 }
 
 .main-cntr > header.desc {
@@ -40,7 +42,7 @@ main {
 }
 
 .main-cntr > footer > a {
-  color: #ffffff;
+  color: #1f3050;
 }
 
 .img-container > img {
