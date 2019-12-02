@@ -13,12 +13,81 @@
 
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
   <link href="static/css/aim-theme.0.2.0.min.css" rel="stylesheet">
+  <link href="static/css/main.0.1.0.css" rel="stylesheet">
 </head>
 <body>
   <div id="root">
-    <p>hello world</p>
+    <div class="Header">
+      <div class="Container">
+        <div class="Header__cont">
+          <div class='Header__items'>
+            <a href="/index.html">
+              <div class='Header__item logo'></div>
+            </a>
+          </div>
+          <div class='Header__items'>
+            <a href="/about.html" class='Header__item clickable'>About</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Home screen">
+      <div class="Container">
+        <div class='Home__card'>
+          <div class='SiteMainScreen__brand'></div>
+          <h2 class="Text center grey-darker no_spacing">
+            Build AI effectively and run everywhere
+          </h2>
+          <h5 class="Text center grey-dark no_spacing_top">
+            AimHub is a version control and collabration hub for AI teams
+          </h5>
+        </div>
+        <div class="Newsletter">
+          <div class="Segment bordered">
+            <div class="Newsletter__cont">
+              <p class="Text text_4 grey-dark no_spacing_top no_spacing">Subscribe</p>
+              <p class="Text overline bold grey-light no_spacing_top">Do not miss any update</p>
+              <form
+                id="s-form"
+                class="Newsletter__form"
+                action="https://formspree.io/xgevyknz"
+                method="POST"
+                target="_blank"
+                onsubmit="handleSubscription()"
+              >
+                <div class="Input__wrapper">
+                  <input class="Input primary large" type="text" name="email" placeholder="Enter your email address">
+                </div>
+                <button
+                  class="Newsletter__form__btn Button primary large no_gradient"
+                >
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Footer">
+      <div class="Container">
+        <div class='Footer__cont'>
+          <p class="Text primary-dark no_spacing_top no_spacing">
+            All rights reserved &copy; AimHub
+          </p>
+          <p class="Text primary-dark no_spacing_top no_spacing">
+            &copy; Copyright 2019
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
-
+  <script>
+    function handleSubscription() {
+      document.getElementById("s-form").reset();
+      return true;
+    }
+  </script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}

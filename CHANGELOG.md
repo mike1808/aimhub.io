@@ -1,5 +1,6 @@
 # Changelog
 
+- Add subscription form (gorarakelyan)
 - Update project structure (gorarakelyan)
 - Add aim basic theme (gorarakelyan)
 

@@ -1,0 +1,131 @@
+/* --------------------------------
+|  Main styles
+-------------------------------- */
+
+/* component: Header */
+.Header {
+    background-color: var(--primary-darkest);
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 21 !important;
+}
+
+.Header__cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 0;
+}
+
+.Header__items {
+    display: flex;
+    flex-direction: row;
+}
+
+.Header__item {
+    position: relative;
+    display: flex;
+    margin: 0 var(--space-xxxs);
+    padding: var(--component-spacing-sm) var(--component-spacing-xs);
+    min-height: calc(2 * var(--component-spacing-sm) + 26px);
+    box-sizing: border-box;
+    color: #FFF !important;
+    align-items: center;
+    cursor: pointer;
+    transition: all 110ms ease;
+}
+
+.Header__item.clickable:hover {
+    text-decoration: underline;
+}
+
+.Header__item.clickable:active {
+    transform: translateY(-3px);
+}
+
+.Header__item.logo {
+    width: 50px;
+    height: 20px;
+    background: url('../../asset/img/aimhub-icon-white.png') no-repeat center/contain;
+}
+
+/* component: Footer */
+.Footer {
+    background-color: #FFF;
+    border-top: 1px solid var(--grey-lighter);
+}
+
+.Footer__cont {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--component-spacing-lg) 0;
+}
+
+/* screen: Home */
+.Home {
+    background-color: var(--primary-bg);
+}
+
+.Home__card {
+    padding: var(--space-xxl) 0;
+}
+
+.SiteMainScreen__brand {
+    width: 400px;
+    height: 75px;
+    margin: 0 auto var(--component-spacing-xl);
+    background: url('../../asset/img/aimhub-icon-lg.png') no-repeat center/contain;
+}
+@media (max-width: 768px) {
+    .SiteMainScreen__brand {
+        width: 250px;
+        height: 55px;
+    }
+}
+
+.Newsletter {
+    width: 700px;
+    margin: auto;
+    margin-bottom: var(--component-spacing-xl);
+    text-align: center;
+}
+
+.Newsletter > .Segment {
+    padding: 0;
+}
+
+.Newsletter__cont {
+    padding: var(--component-spacing-lg) var(--space-xxl) var(--component-spacing-xl);
+}
+
+.Newsletter__form {
+    margin-top: var(--space-md);
+    display: grid;
+    grid-template-columns: 3fr minmax(170px, 1fr);
+    column-gap: var(--component-spacing-sm);
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .Newsletter {
+        width: 100%;
+    }
+
+    .Newsletter__form {
+        grid-template-columns: 1fr;
+        column-gap: 0;
+        row-gap: var(--component-spacing-sm);
+    }
+}
+
+/* Atomic utils */
+.screen {
+    padding: var(--component-spacing-md) 0;
+    min-height: calc(100vh - 150px);
+    overflow-x: hidden;
+}
