@@ -67,7 +67,7 @@
 /* component: Code */
 .Code {
     font-family: monospace;
-    font-size: var(--text-md);
+    font-size: 0.9em;
     margin: 0;
     padding: 0;
 }
@@ -133,6 +133,10 @@
 
 /* screen: About */
 .About {
+}
+
+.About__header {
+    margin-bottom: var(--component-spacing-lg);
 }
 
 .AboutBlock {

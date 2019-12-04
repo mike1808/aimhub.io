@@ -1,5 +1,6 @@
 # Changelog
 
+- Update component titles and descriptions (gorarakelyan)
 - Add aim component demonstrations to about screen (gorarakelyan)
 - Add subscription form (gorarakelyan)
 - Update project structure (gorarakelyan)

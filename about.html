@@ -32,26 +32,34 @@
         </div>
     </div>
     <div class="About screen">
-        <div class="Container">
-            <h1 class="Text text_3 no_spacing center primary">AimHub - Version Control and Collaboration Hub for AI Teams</h1>
-            <h6 class="Text text_6 no_spacing_top center grey">[From Engineers For Engineers]</h6>
+        <div class="About__header Container">
+            <h1 class="Text text_3 center primary">Version Control and Collaboration Hub for AI Teams</h1>
+            <h5 class="Text text_5 center grey">From Engineers For Engineers</h5>
         </div>
-        <br />
         <div class="AboutBlock">
             <div class="Container">
-                <p class="Text text_5 no_spacing no_spacing_top primary">Command line interface</p>
-                <p class="Text no_spacing_top grey">
-                    Aim tracks training and saves the tacked data to automatically visualize insights,
-                    debugging and interpretation about the training.
+                <p class="Text text_5 no_spacing no_spacing_top primary">Overview</p>
+                <p class="Text no_spacing_top no_spacing grey">
+                    AimHub tracks ML training, saves the tacked data and automatically visualizes
+                    them as insights on collaboration Hub.
                     <br />
-                    Checkout, commit, push, pull via aim CLI
+                    Aim CLI and SDK help to track, save, manage and push the tracked data to the Hub.
+                    Hub visualizes the data for debugging and insight.
+                </p>
+            </div>
+        </div>
+        <div class="AboutBlock">
+            <div class="Container">
+                <h5 class="Text text_5 no_spacing no_spacing_top primary">Command line interface</h5>
+                <p class="Text no_spacing_top grey">
+                    Checkout, commit, push, pull experiments via aim CLI
                 </p>
                 <div class="AboutBlock__demo__horizontal">
                     <p class="Text overline bold no_spacing_top grey-dark">demonstration</p>
                     <div class="AboutBlock__demo__item">
                         <div
-                                class="AboutBlock__demo__item__cont lg"
-                                style="background-image: url('asset/img/demo/aim_cli_demo.gif')"
+                            class="AboutBlock__demo__item__cont lg"
+                            style="background-image: url('asset/img/demo/aim_cli_demo.gif')"
                         ></div>
                     </div>
                 </div>
@@ -59,8 +67,8 @@
         </div>
         <div class="AboutBlock">
             <div class="Container">
-                <p class="Text text_5 no_spacing no_spacing_top primary">Track various metrics via SDK</p>
-                <p class="Text no_spacing_top grey">Aim tracks training and saves the tacked data</p>
+                <h5 class="Text text_5 no_spacing no_spacing_top primary">Track training metrics via SDK</h5>
+                <p class="Text no_spacing_top grey">Track the loss and visualize</p>
                 <div class="AboutBlock__demo">
                     <div class="AboutBlock__demo__code">
                         <pre class="Code">
@@ -86,8 +94,8 @@ track(aim.loss, 'model_loss', loss.item())
         </div>
         <div class="AboutBlock">
             <div class="Container">
-                <p class="Text text_5 no_spacing primary">Track correlation</p>
-                <p class="Text no_spacing_top grey">lorem ispum dolor sit amet </p>
+                <h5 class="Text text_5 no_spacing primary">Track correlation</h5>
+                <p class="Text no_spacing_top grey">Understand the correlation between predictions</p>
                 <div class="AboutBlock__demo">
                     <div class="AboutBlock__demo__code">
                         <pre class="Code">
@@ -114,8 +122,8 @@ track(aim.label_correlation, 'corr', outputs,
         </div>
         <div class="AboutBlock">
             <div class="Container">
-                <p class="Text text_5 no_spacing primary">Save and load your model checkpoints</p>
-                <p class="Text no_spacing_top grey">lorem ispum dolor sit amet </p>
+                <h5 class="Text text_5 no_spacing primary">Save and load your model checkpoints</h5>
+                <p class="Text no_spacing_top grey">Never lose your key checkpoints</p>
                 <div class="AboutBlock__demo">
                     <div class="AboutBlock__demo__code">
                         <pre class="Code">
