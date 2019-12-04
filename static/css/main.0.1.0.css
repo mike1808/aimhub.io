@@ -64,6 +64,14 @@
     padding: var(--component-spacing-lg) 0;
 }
 
+/* component: Code */
+.Code {
+    font-family: monospace;
+    font-size: var(--text-md);
+    margin: 0;
+    padding: 0;
+}
+
 /* screen: Home */
 .Home {
     background-color: var(--primary-bg);
@@ -121,6 +129,96 @@
         column-gap: 0;
         row-gap: var(--component-spacing-sm);
     }
+}
+
+/* screen: About */
+.About {
+}
+
+.AboutBlock {
+    padding-top: var(--component-spacing-md);
+    padding-bottom: var(--component-spacing-md);
+}
+
+.AboutBlock.bg {
+    background-color: var(--primary-bg);
+}
+
+.AboutBlock__demo {
+    display: grid;
+    grid-template-columns: 1fr minmax(60px, 100px) 1fr;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grey-bg);
+    border: 1px solid var(--grey-lighter);
+    border-radius: var(--border-radius);
+    padding: var(--component-spacing-md);
+}
+
+.AboutBlock__demo__horizontal {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grey-bg);
+    border: 1px solid var(--grey-lighter);
+    border-radius: var(--border-radius);
+    padding: var(--component-spacing-md);
+}
+
+.AboutBlock__demo__item {
+}
+
+.AboutBlock__demo__item__cont {
+    display: block;
+    width: 100%;
+    height: 250px;
+    background-color: var(--grey-light-xx);
+    border: 1px solid var(--grey-light-xx);
+    border-radius: var(--border-radius);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-sizing: border-box;
+}
+
+.AboutBlock__demo__item__cont.lg {
+    height: 300px;
+}
+
+.AboutBlock__demo__code {
+
+}
+
+.AboutBlock__demo__arr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.AboutBlock__demo__arr__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    /*background-color: var(--grey-lighter);*/
+    height: 100px;
+    width: 100px;
+}
+
+@media (max-width: 992px) {
+    .AboutBlock__demo {
+        grid-template-columns: 1fr;
+        grid-row-gap: var(--component-spacing-md);
+    }
+
+    .AboutBlock__demo__arr {
+        display: none;
+    }
+}
+
+.About__much {
+    margin: var(--component-spacing-md);
 }
 
 /* Atomic utils */

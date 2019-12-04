@@ -21,18 +21,134 @@
         <div class="Container">
             <div class="Header__cont">
                 <div class='Header__items'>
-                    <div class='Header__item logo'></div>
-                    <div class='Header__item clickable'>Home</div>
-                    <div class='Header__item clickable'>About</div>
+                    <a href="/index.html">
+                        <div class='Header__item logo'></div>
+                    </a>
                 </div>
                 <div class='Header__items'>
-                    <div class='Header__item clickable'>Docs</div>
+                    <a href="/about.html" class='Header__item clickable'>About</a>
                 </div>
             </div>
         </div>
     </div>
     <div class="About screen">
+        <div class="Container">
+            <h1 class="Text text_3 no_spacing center primary">AimHub - Version Control and Collaboration Hub for AI Teams</h1>
+            <h6 class="Text text_6 no_spacing_top center grey">[From Engineers For Engineers]</h6>
+        </div>
+        <br />
+        <div class="AboutBlock">
+            <div class="Container">
+                <p class="Text text_5 no_spacing no_spacing_top primary">Command line interface</p>
+                <p class="Text no_spacing_top grey">
+                    Aim tracks training and saves the tacked data to automatically visualize insights,
+                    debugging and interpretation about the training.
+                    <br />
+                    Checkout, commit, push, pull via aim CLI
+                </p>
+                <div class="AboutBlock__demo__horizontal">
+                    <p class="Text overline bold no_spacing_top grey-dark">demonstration</p>
+                    <div class="AboutBlock__demo__item">
+                        <div
+                                class="AboutBlock__demo__item__cont lg"
+                                style="background-image: url('asset/img/demo/aim_cli_demo.gif')"
+                        ></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="AboutBlock">
+            <div class="Container">
+                <p class="Text text_5 no_spacing no_spacing_top primary">Track various metrics via SDK</p>
+                <p class="Text no_spacing_top grey">Aim tracks training and saves the tacked data</p>
+                <div class="AboutBlock__demo">
+                    <div class="AboutBlock__demo__code">
+                        <pre class="Code">
+...
 
+track(aim.loss, 'model_loss', loss.item())
+
+...</pre>
+                    </div>
+                    <div class="AboutBlock__demo__arr">
+                        <div class="AboutBlock__demo__arr__wrapper">
+                            <img src="asset/img/arrow.svg" height="50">
+                        </div>
+                    </div>
+                    <div class="AboutBlock__demo__item">
+                        <div
+                            class="AboutBlock__demo__item__cont"
+                            style="background-image: url('asset/img/demo/metric.gif')"
+                        ></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="AboutBlock">
+            <div class="Container">
+                <p class="Text text_5 no_spacing primary">Track correlation</p>
+                <p class="Text no_spacing_top grey">lorem ispum dolor sit amet </p>
+                <div class="AboutBlock__demo">
+                    <div class="AboutBlock__demo__code">
+                        <pre class="Code">
+...
+
+track(aim.label_correlation, 'corr', outputs,
+      labels=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+
+...</pre>
+                    </div>
+                    <div class="AboutBlock__demo__arr">
+                        <div class="AboutBlock__demo__arr__wrapper">
+                            <img src="asset/img/arrow.svg" height="50">
+                        </div>
+                    </div>
+                    <div class="AboutBlock__demo__item">
+                        <div
+                            class="AboutBlock__demo__item__cont"
+                            style="background-image: url('asset/img/demo/label-corr.gif')"
+                        ></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="AboutBlock">
+            <div class="Container">
+                <p class="Text text_5 no_spacing primary">Save and load your model checkpoints</p>
+                <p class="Text no_spacing_top grey">lorem ispum dolor sit amet </p>
+                <div class="AboutBlock__demo">
+                    <div class="AboutBlock__demo__code">
+                        <pre class="Code">
+...
+
+track(aim.checkpoint,
+    'model_name', 'chp_epoch_{}'.format(e),
+    model, epoch,
+    meta={
+      'batch_size': 10,
+      'kernel_size': 2,
+      'stride': 2,
+    })
+
+...</pre>
+                    </div>
+                    <div class="AboutBlock__demo__arr">
+                        <div class="AboutBlock__demo__arr__wrapper">
+                            <img src="asset/img/arrow.svg" height="50">
+                        </div>
+                    </div>
+                    <div class="AboutBlock__demo__item">
+                        <div
+                            class="AboutBlock__demo__item__cont"
+                            style="background-image: url('asset/img/demo/checkpoint.gif')"
+                        ></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Container">
+            <p class="About__much Text text_5 center primary">and much more ...</p>
+        </div>
     </div>
     <div class="Footer">
         <div class="Container">
@@ -47,7 +163,6 @@
         </div>
     </div>
 </div>
-
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
