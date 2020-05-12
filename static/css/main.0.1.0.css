@@ -120,7 +120,7 @@
 .Home__card__illustration__img {
     width: 100%;
     height: 600px;
-    background-image: url('../../asset/img/nn-illustration-light.png');
+    background-image: url('../../asset/img/nn-illustration-light.0.2.png');
 }
 @media (max-width: 992px) {
     .Home__card__illustration__img {
