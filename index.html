@@ -1,53 +1,118 @@
 <!DOCTYPE html>
-<!-- saved from url=(0020)http://aimhub.io/ -->
-<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="" style="">
-<!--<![endif]-->
-  <head>
-    <link rel="icon" type="image/x-icon" href="https://aimhub.io/favicon.ico">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>aimhub</title>
-    <meta name="description" content="Aimhub - Github for AI Models">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AimHub: Version control and collabration hub for AI teams</title>
+  <meta name="description" content="build AI effectively and run everywhere">
+  <link rel="shortcut icon" href="asset/img/favicon.ico" />
+  <meta name="theme-color" content="#000000" />
 
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="main-123.css" rel="stylesheet">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108474435-1"></script>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108474435-1"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
+  <link href="static/css/aim-theme.0.2.0.min.css" rel="stylesheet">
+  <link href="static/css/main.0.1.0.css" rel="stylesheet">
 </head>
 <body>
-<!--[if lt IE 8]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
-    your browser</a> to improve your experience.</p>
-<![endif]-->
-
-
-<main>
-
-  <div class="main-cntr">
-    <div class="img-container">
-      <img src="aimhub-icon.png">
+  <div id="root">
+<!--     <div class="Header">
+      <div class="Container">
+        <div class="Header__cont">
+          <div class='Header__items'>
+            <div class='Header__item logo'></div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <div class="Home screen">
+      <div class="Container">
+        <div class='Home__card'>
+          <div class="Home__card__info">
+            <div class='Home__brand'></div>
+            <h2 class="Text primary-dark">
+              Built for AI Engineers
+            </h2>
+            <h5 class="Text grey">
+              Version Control and Collabortion Hub for AI Teams
+            </h5>
+          </div>
+          <div class="Home__card__illustration">
+            <div class="Home__card__illustration__img img" style="background-image: url('asset/img/nn-illustration-light.png')"></div>
+          </div>
+        </div>
+      </div>
     </div>
-    <header class="main"><strong>aimhub</strong></header>
-    <header class="desc">Built for AI Engineers</header>
-    <section>Version control and collaboration hub for AI teams</section>
-    <footer>In stealth mode. Say hi at <a href="mailto:info@aimhub.io" target="_top">info@aimhub.io</a>
-    </footer>
+    <div class="TrustedBy screen">
+      <div class="Container">
+        <h4 class="Text center primary-dark">Trusted by</h4>
+        <div class="TrustedBy__box">
+          <div class="TrustedBy__box__item">
+            <div class="TrustedBy__box__item__img img" style="background-image: url('asset/img/trusted/krisp.png')"></div>
+          </div>
+          <div class="TrustedBy__box__item">
+            <div class="TrustedBy__box__item__img img" style="background-image: url('asset/img/trusted/smartclick.svg')"></div>
+          </div>
+          <div class="TrustedBy__box__item">
+            <div class="TrustedBy__box__item__img img" style="background-image: url('asset/img/trusted/skydeck.png')"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Contact screen">
+      <div class="Container">
+        <div class="Newsletter">
+          <div class="Segment">
+            <div class="Newsletter__cont">
+              <p class="Text text_4 grey-dark no_spacing_top no_spacing">Subscribe</p>
+              <p class="Text overline bold grey-light no_spacing_top">Do not miss any update</p>
+              <form
+                id="s-form"
+                class="Newsletter__form"
+                action="https://formspree.io/xgevyknz"
+                method="POST"
+                target="_blank"
+                onsubmit="handleSubscription()"
+              >
+                <div class="Input__wrapper">
+                  <input class="Input primary large Newsletter__form__input" type="email" name="email" placeholder="Enter your email address">
+                </div>
+                <button
+                  class="Newsletter__form__btn Button primary large no_gradient"
+                >
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Footer">
+      <div class="Container">
+        <div class='Footer__cont'>
+          <p class="Text grey-dark no_spacing_top no_spacing">
+            &copy; 2020 AimHub, Inc. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
-</main>
+  <script>
+    function handleSubscription() {
+      setTimeout(function () {
+        document.getElementById("s-form").reset();
+      }, 5000);
+      return true;
+    }
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-108474435-1');
-</script>
-
-</body></html>
-
+    gtag('config', 'UA-108474435-1');
+  </script>
+</body>
+</html>
