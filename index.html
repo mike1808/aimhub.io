@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>aimhub</title>
+  <title>AimHub: Version control and collabration hub for AI teams</title>
   <meta name="description" content="build AI effectively and run everywhere">
   <link rel="shortcut icon" href="asset/img/favicon.ico" />
   <meta name="theme-color" content="#000000" />
@@ -17,33 +17,53 @@
 </head>
 <body>
   <div id="root">
-    <div class="Header">
+<!--     <div class="Header">
       <div class="Container">
         <div class="Header__cont">
           <div class='Header__items'>
-            <a href="/index.html">
-              <div class='Header__item logo'></div>
-            </a>
+            <div class='Header__item logo'></div>
           </div>
-          <div class='Header__items'>
-            <a href="/about.html" class='Header__item clickable'>About</a>
+        </div>
+      </div>
+    </div> -->
+    <div class="Home screen">
+      <div class="Container">
+        <div class='Home__card'>
+          <div class="Home__card__info">
+            <div class='Home__brand'></div>
+            <h2 class="Text primary-dark">
+              Built for AI Engineers
+            </h2>
+            <h5 class="Text grey">
+              Version Control and Collabortion Hub for AI Teams
+            </h5>
+          </div>
+          <div class="Home__card__illustration">
+            <div class="Home__card__illustration__img img" style="background-image: url('asset/img/nn-illustration-light.png')"></div>
           </div>
         </div>
       </div>
     </div>
-    <div class="Home screen">
+    <div class="TrustedBy screen">
       <div class="Container">
-        <div class='Home__card'>
-          <div class='SiteMainScreen__brand'></div>
-          <h2 class="Text center grey-darker no_spacing">
-            Build AI effectively and run everywhere
-          </h2>
-          <h5 class="Text center grey-dark no_spacing_top">
-            AimHub is a version control and collabration hub for AI teams
-          </h5>
+        <h4 class="Text center primary-dark">Trusted by</h4>
+        <div class="TrustedBy__box">
+          <div class="TrustedBy__box__item">
+            <div class="TrustedBy__box__item__img img" style="background-image: url('asset/img/trusted/krisp.png')"></div>
+          </div>
+          <div class="TrustedBy__box__item">
+            <div class="TrustedBy__box__item__img img" style="background-image: url('asset/img/trusted/smartclick.svg')"></div>
+          </div>
+          <div class="TrustedBy__box__item">
+            <div class="TrustedBy__box__item__img img" style="background-image: url('asset/img/trusted/skydeck.png')"></div>
+          </div>
         </div>
+      </div>
+    </div>
+    <div class="Contact screen">
+      <div class="Container">
         <div class="Newsletter">
-          <div class="Segment bordered">
+          <div class="Segment">
             <div class="Newsletter__cont">
               <p class="Text text_4 grey-dark no_spacing_top no_spacing">Subscribe</p>
               <p class="Text overline bold grey-light no_spacing_top">Do not miss any update</p>
@@ -56,7 +76,7 @@
                 onsubmit="handleSubscription()"
               >
                 <div class="Input__wrapper">
-                  <input class="Input primary large" type="text" name="email" placeholder="Enter your email address">
+                  <input class="Input primary large Newsletter__form__input" type="email" name="email" placeholder="Enter your email address">
                 </div>
                 <button
                   class="Newsletter__form__btn Button primary large no_gradient"
@@ -72,11 +92,8 @@
     <div class="Footer">
       <div class="Container">
         <div class='Footer__cont'>
-          <p class="Text primary-dark no_spacing_top no_spacing">
-            All rights reserved &copy; AimHub
-          </p>
-          <p class="Text primary-dark no_spacing_top no_spacing">
-            &copy; Copyright 2019
+          <p class="Text grey-dark no_spacing_top no_spacing">
+            &copy; 2020 AimHub, Inc. All rights reserved.
           </p>
         </div>
       </div>
@@ -84,7 +101,9 @@
   </div>
   <script>
     function handleSubscription() {
-      document.getElementById("s-form").reset();
+      setTimeout(function () {
+        document.getElementById("s-form").reset();
+      }, 5000);
       return true;
     }
   </script>
