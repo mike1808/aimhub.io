@@ -1,3 +1,3 @@
 # Aimhub
 
-[Aimhub](aimhub.io) - Github for AI models
+[Aimhub](https://aimhub.io) - Github for AI models
